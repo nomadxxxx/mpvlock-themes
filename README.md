@@ -6,7 +6,7 @@ This repository contains themes and an installer script for **mpvlock**, a more 
 
 Install mpvlock or a specific theme directly without cloning the repository:
 
-- **Install mpvlock only**:
+- **Install**:
   ```bash
   curl -L https://raw.githubusercontent.com/nomadxxxx/mpvlock-themes/main/mpvlock_theme_installer.sh | bash
   ```
@@ -39,6 +39,20 @@ The following themes are included:
 - `gothgirl`: Dark animoo girl.
 - `neon_jinx`: neon effects with `neon_jinx.mp4`.
 - `solitude`: animoo girl pondering universe (arguably best) `1.mp4`.
+
+## Detailed Previews
+
+| **cat-pool** | **cherry-blossom** |
+|:--:|:--:|
+| <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/cat-pool.png" width="500"> | <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/cherry-blossom.png" width="500"> |
+
+| **elon** | **gothgirl** |
+|:--:|:--:|
+| <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/elon.png" width="500"> | <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/gothgirl.png" width="500"> |
+
+| **solitude** | **Neon Jinx** |
+|:--:|:--:|
+| <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/solitude.png" width="500"> | <img src="https://github.com/nomadxxxx/hyprddm/raw/master/Previews/neon_jinx.png" width="500"> |
 
 ## Usage
 
