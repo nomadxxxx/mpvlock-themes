@@ -205,8 +205,8 @@ install_theme() {
 }
 
 # Check if running non-interactively (e.g., piped from curl)
-if [ ! -t 0 ]; then
-    # Non-interactive mode
+if [[ ! "$-" =~ i ]]; then
+    # Non-interactive mode (no 'i' in $- indicates non-interactive)
     if [ "$1" = "-t" ] && [ -n "$2" ]; then
         # Install specific theme
         SELECTED_THEME="$2"
@@ -220,7 +220,7 @@ if [ ! -t 0 ]; then
         fi
     else
         # Default action: install mpvlock
-        echo "No theme specified. Installing mpvlock by default..."
+        echo "Running in non-interactive mode. Installing mpvlock by default..."
         install_mpvlock
         exit 0
     fi
@@ -240,7 +240,10 @@ EOF
     echo "$(( ${#THEMES[@]} + 2 ))) EXIT"
 
     # Get user selection
-    read -p "Enter your choice: " CHOICE
+    if ! read -t 1 -p "Enter your choice: " CHOICE; then
+        echo "No input received. Exiting."
+        exit 1
+    fi
 
     # Validate input is a number
     if ! [[ "$CHOICE" =~ ^[0-9]+$ ]]; then
