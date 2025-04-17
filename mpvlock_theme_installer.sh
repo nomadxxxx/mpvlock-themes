@@ -204,7 +204,29 @@ install_theme() {
     echo "Theme $theme installed successfully!"
 }
 
-# Main script
+# Check if running non-interactively (e.g., piped from curl)
+if [ ! -t 0 ]; then
+    # Non-interactive mode
+    if [ "$1" = "-t" ] && [ -n "$2" ]; then
+        # Install specific theme
+        SELECTED_THEME="$2"
+        if [[ " ${THEMES[@]} " =~ " $SELECTED_THEME " ]]; then
+            install_theme "$SELECTED_THEME"
+            echo "Theme $SELECTED_THEME has been installed successfully! Restart mpvlock to apply the new theme."
+            exit 0
+        else
+            echo "Error: Theme '$SELECTED_THEME' is not recognized. Available themes are: ${THEMES[@]}"
+            exit 1
+        fi
+    else
+        # Default action: install mpvlock
+        echo "No theme specified. Installing mpvlock by default..."
+        install_mpvlock
+        exit 0
+    fi
+fi
+
+# Interactive mode
 while true; do
     # Display menu
     cat << "EOF"
