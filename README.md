@@ -32,7 +32,7 @@ Install mpvlock or a specific theme directly without cloning the repository:
    - Themes are installed to `~/.config/mpvlock/themes/`, and the configuration is updated accordingly.
 
 ## Available Themes
-
+![All Themes Preview](https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/previews.gif)
 The following themes are included:
 - `cat-pool`: Features a playful cat-themed video.
 - `cherry-blossom`: Showcases cute animoo with cherry blossom animation.
