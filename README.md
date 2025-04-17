@@ -53,7 +53,7 @@ The following themes are included:
 
 | **solitude** | **Neon Jinx** |
 |:--:|:--:|
-| <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/solitude.png" width="500"> | <img src="https://github.com/nomadxxxx/hyprddm/raw/master/Previews/neon_jinx.png" width="500"> |
+| <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/solitude.png" width="500"> | <img src="https://github.com/nomadxxxx/mpvlock-themes/blob/main/assets/neon_jinx.png" width="500"> |
 
 ## Usage
 
